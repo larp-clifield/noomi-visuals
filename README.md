@@ -1,23 +1,11 @@
-# noomi-visuals
-# noomiclone-assets
+GitHub About description:
+Phone-first NoomiClone Unity asset research tools for Termux/UnityPy: inventory, PNG previews, material-reference tracing, and local patch validation.
 
-Скрипты и пайплайн для сборки, нарезки и сжатия 2D-графики под **NoomiClone**.
+Suggested topics:
+noomiclone, unity, unitypy, android, termux, game-modding, asset-inspection
 
-Репозиторий решает одну задачу: берет сырые исходники и превращает их в готовые атласы и спрайты, которые можно сразу кидать в проект без ручной рутины.
+Public-repo cleanup note:
+The current public repository contains il2cpp_probe.zip with game-specific libil2cpp.so and global-metadata.dat. Do not keep that binary archive public without permission from the rights holder. .gitignore will not remove an already committed file. Delete it from the repository and consider making the repository private or recreating a clean public repository so the old commit history does not continue to expose it.
 
-## Что внутри
-
-* **Сборка атласов:** упаковывает отдельный набор PNG в единые спрайт-листы с генерацией `.json` разметки.
-* **Авто-ресайз:** генерирует графику сразу под несколько плотностей экрана (`1x`, `2x`, `3x`).
-* **Сжатие:** прогоняет итоговые картинки через WebP / PNG-кранчеры без заметного мыла.
-* **UI-компоненты:** автоматическая нарезка 9-patch бэкграундов и кнопок.
-
-## Папки
-
-```text
-├── assets/          # Сырые арты и исходники (.png, .svg)
-├── scripts/         # Скрипты генерации
-│   ├── pack_ui.py   # Сборщик спрайт-листов
-│   └── resize.py    # Масштабирование
-├── dist/            # Итоговые файлы для игры
-└── config.json      # Настройки экспорта
+Note:
+GitHub's repository About field and file tree cannot be edited by this workspace. Copy the description above into Settings > General > Description, replace README.md, add .gitignore, and upload only the scripts/documentation you intend to publish.
