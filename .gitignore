@@ -1,0 +1,36 @@
+# Local Python environments and caches
+.venv/
+unity-env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# APKs / app bundles / extracted game files (do not publish game binaries)
+*.apk
+*.apks
+*.aab
+*.xapk
+*.obb
+libil2cpp.so
+global-metadata.dat
+il2cpp_probe.zip
+*.assets
+*.assets.split*
+*.resource
+*.resS
+*.ress
+*.bundle
+*.unity3d
+
+# Local reports, previews, test patches, and dump output
+unity_scan/
+unity_scan_png/
+reports/
+textures/
+green_patch/
+il2cpp_probe/
+DummyDll/
+dump.cs
+il2cpp.h
+script.json
+stringliteral.json
